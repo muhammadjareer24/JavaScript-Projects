@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Form</title>
+    <link rel="icon" href="./v.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+
+        <div class="content">
+            <div class="logo">
+                <img src="logo.svg" alt="">
+            </div>
+            <div class="image">
+
+            </div>
+            <div class="text">Start for free & Get <br> attractive offers today!</div>
+        </div>
+
+        <form id="form">
+
+            <div class="social">
+
+                <div class="title">Get Started</div> 
+                <div class="question">
+                    Already Have an Account? <br>
+                    <span>Sign In</span>
+                </div>
+
+                <div class="btn">
+                    <div class="btn-1">
+                        <img width="30" height="30" src="https://img.icons8.com/color/48/google-logo.png" alt="google-logo"/>
+                        Sign Up
+                    </div>
+                    <div class="btn-2">
+                        <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png" alt="facebook-new"/>
+                        Sign Up
+                    </div>
+                </div>
+
+                <div class="or">Or</div>
+            </div>
+
+
+            <!-- /**
+            * ! User Name Input Here 
+            **/ -->
+
+            <div>
+                <label for="username">User Name</label>
+                <i class="fa-solid fa-user"></i>
+                <input type="text" name="username" id="username" placeholder="Muhammad Jareer">
+                <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+                <i class="fa-regular fa-circle-check success-icon"></i>
+                <div class="error"></div>
+            </div>
+
+            <!-- /**
+            * ! Email Input Here 
+            **/ -->
+
+            <div>
+                <label for="email">Email</label>
+                <i class="fa-regular fa-envelope"></i>
+                <input type="email" name="email" id="email" placeholder="abc@email.com">
+                <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+                <i class="fa-regular fa-circle-check success-icon"></i>
+                <div class="error"></div>
+            </div>
+
+            <!-- /**
+            * ! Password Input Here 
+            **/ -->
+
+            <div>
+                <label for="password">Password</label>
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" name="password" id="password" placeholder="Password">
+                <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+                <i class="fa-regular fa-circle-check success-icon"></i>
+                <div class="error"></div>
+            </div>
+
+            <button type="submit" id="submit">Submit</button>
+        </form>
+
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
