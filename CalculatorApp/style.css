@@ -1,0 +1,93 @@
+:root {
+  --bg-color: #17181a;
+  --display-color: #292b2f;
+  --dark-color: #505050;
+  --light-color: #d4d4d2;
+  --orange-color: #ff9500;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+#calculator {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-color);
+  border-radius: 1rem;
+  max-width: 32rem;
+  overflow: hidden;
+}
+
+.display {
+  width: 100%;
+  padding: 2rem;
+  font-size: 5rem;
+  text-align: left;
+  border: none;
+  background-color: var(--display-color);
+  color: var(--light-color);
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+  padding: 2rem;
+}
+
+button {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 3rem;
+  border: none;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #666666;
+}
+button:active {
+  background-color: #808080;
+}
+
+.light-btn {
+  background-color: var(--light-color);
+  color: var(--display-color);
+}
+.light-btn:hover {
+  background-color: #eeeeed;
+}
+.light-btn:active {
+  background-color: #ffffff;
+}
+
+.orange-btn {
+  background-color: var(--orange-color);
+  color: var(--display-color);
+}
+.orange-btn:hover {
+  background-color: #ffa424;
+}
+.orange-btn:active {
+  background-color: #ffb143;
+}
+
+.equal-btn {
+  grid-column: span 2;
+  border-radius: 3rem;
+  width: auto;
+}
