@@ -26,6 +26,8 @@ body {
   border-radius: 1rem;
   max-width: 32rem;
   overflow: hidden;
+  transform: scale(0.8);
+  transform-origin: center;
 }
 
 .display {
@@ -90,4 +92,11 @@ button:active {
   grid-column: span 2;
   border-radius: 3rem;
   width: auto;
+}
+
+@media (max-width: 480px) {
+  #calculator {
+    transform: scale(0.6);
+    min-width: 30rem;
+  }
 }
